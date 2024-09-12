@@ -20,7 +20,7 @@ app.get('/estudiantes/:id',(req,res)=>{
     const result = estudiantes.find((estudiante)=> estudiante.id === parseInt(id))
     if (result) res.send(result)
     else {
-        res.send('El estudiante no fue encontrado*')
+        res.send('El estudiante no fue encontrado..')
         res.send(result)}
 })
 
